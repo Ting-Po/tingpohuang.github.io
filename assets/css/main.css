@@ -2467,6 +2467,13 @@
 			top: 0.25em;
 		}
 
+		.image.round {
+			width: 15em;
+			overflow: hidden;
+			-ms-flex: 1;
+
+		}
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
