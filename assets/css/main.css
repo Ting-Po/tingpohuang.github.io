@@ -2057,9 +2057,19 @@
 			display: inline-block;
 			border-top: solid 2px #e5e5e5;
 			color: #777;
-			margin: 1.5em 0 0 0;
-			padding: 1.5em 0 0 0;
+			margin: 1.5em 0 0 2em;
+			padding: 1.5em 0 0 2em;
 			font-style: normal;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		header.major img {
+			display: inline-block;
+			float: left;
+			width: 30%;
+			border-radius: 8px;
+			
 		}
 
 /* Form */
@@ -2328,6 +2338,14 @@
 		.box.special {
 			text-align: center;
 		}
+
+
+		/* Tim */
+		.box .image.half img {
+			vertical-align: middle;
+			width: 60%;
+		}
+
 
 		.box .image.featured {
 			border-radius: 0;

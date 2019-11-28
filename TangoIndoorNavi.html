@@ -45,7 +45,7 @@
 						<h4>Project Background : Research Project</h4>
 						<h4>Project date : 2017.02 - 2018.02</h4>
 						<h4>Project supervisor : Dr. Hung-Kuo Chu</h4>
-						<div class="row">
+							<div class="row">
 								<div class="row-6 row-12-mobilep">
 									<h3>Goal</h3>
 									<p>With Google Project Tango devices, we can do <b>Area Learning</b>and <b>Scene Abstraction</b>
@@ -57,32 +57,79 @@
 									<span class="image featured"><img src="images/tango_system_overview.png" alt="" /></span>
 								</div>
 							</div>
-							
 							<div class="row">
 								<div class="row-6 row-12-mobilep">
+									<br><br>
 									<h3>Google Tango Devices</h3>
-									<p>Currently, we are conducting user study of this location-based Augmented Reality (AR) technology. We have found two challenging routes in the city of Hsinchu, Taiwan, and we are implementing a within-subject study to understand the <b>usability</b> and the <b>User Burden</b> (Hyewon Suh, 2016) of using the Google Maps plus our system compares to solely using the Google Maps.
-									</p>
-									<p>With the <b>post-trial self-rating</b>, <b>performance measures</b>, and <b>video/audio recorded</b> for qualitative data analysis, we are hoping not only to examine the usability of our functions, but also provide insights to the design of AR pedestrian navigation.</p>
+									<span class="image half"><img src="images/tango_core.png" alt="" /></span>
+									<span class="image half"><img src="images/tango_devices.png"   alt="" /></span>
 								</div>
 								<div class="row-6 row-12-mobilep">
 									<h3>RGB + Point Cloud</h3>
-									<p>I am the leader of the user study phase. Also I co-developed the research app, tweaking the app to enhance its reliability and made it fit into our experimental environment.</p>
-									<p>This research is a perfect practice of my ability to lead the design and conduct of a user study. It provides me a chance to learn how to develop apps on the Unity platform as well.</p>
+									<p>RGB frame and Point Cloud alignment</p>
+									<p>Step: </p>
+									<ul>
+										<li>Dump RGB frame and Point Cloud raw data</li>
+										<li>Decode RGB frame from YUV</li>
+										<li>Camera extrinsic transformation</li>
+										<img width="250" src="images/math1.png" alt="" />
+										<li>Map Point Cloud with Area Description File</li>	
+									</ul>
 								</div>
 							</div>
 
 							<div class="row">
 									<div class="row-6 row-12-mobilep">
 										<h3>3D Object Detection</h3>
-										<p>Currently, we are conducting user study of this location-based Augmented Reality (AR) technology. We have found two challenging routes in the city of Hsinchu, Taiwan, and we are implementing a within-subject study to understand the <b>usability</b> and the <b>User Burden</b> (Hyewon Suh, 2016) of using the Google Maps plus our system compares to solely using the Google Maps.
-										</p>
-										<p>With the <b>post-trial self-rating</b>, <b>performance measures</b>, and <b>video/audio recorded</b> for qualitative data analysis, we are hoping not only to examine the usability of our functions, but also provide insights to the design of AR pedestrian navigation.</p>
+										<p>Point Cloud projection and labeling</p>
+										<p>Step: </p>
+										<ul>
+											<li>Use PSPNet (CVPR2017) segment 2D RGB image</li>
+											<li>Project 3D Point Cloud to Segment result</li>
+											<li>Voting the Point Cloud label with valid class</li>
+											<img width = 100% src="images/3dobject1.png" />
+										</ul>
+										<h3>Centroid founding and Bounding Box Generation</h3>
+										<p>Step: </p>
+										<ul>
+											<li>Generate random 10000 points in space and select the point in high density area as candidate (white)</li>
+											<li>Group candidate with distance (blue)</li>
+											<li>Generate Bounding by centroid</li>
+											<img width = 100% src="images/3dobject2.png" />
+										</ul>
+
 									</div>
 									<div class="row-6 row-12-mobilep">
 										<h3>Scene Abstraction</h3>
-										<p>I am the leader of the user study phase. Also I co-developed the research app, tweaking the app to enhance its reliability and made it fit into our experimental environment.</p>
-										<p>This research is a perfect practice of my ability to lead the design and conduct of a user study. It provides me a chance to learn how to develop apps on the Unity platform as well.</p>
+										<p>Online annotation and add info</p>
+										<p>Step: </p>
+										<ul>
+											<li>Online annotation wall, ceiling, floor and door</li>
+											<li>Combine Object Bounding Box</li>
+											<li>Adjust Bounding Box size in Offline Editor</li>
+											<li>Offline Editor adding map information</li>
+											<video width = 100%  controls> <source src = "videos/scene_abstraction.mp4" type="video/mp4"></video>
+										</ul>	
+									</div>
+									<div class="row">
+											<div class="row-6 row-12-mobilep">
+												<h3>Room Graph</h3>
+												<span class="image featured"><img src="images/room_graph.png" alt="" /></span>
+												</div>
+											<div class="row-6 row-12-mobilep">
+												<br><br>
+												<h3>Offline Editior</h3>
+												<span class="image featured"><img src="images/offline_editior.png" alt="" /></span>
+											</div>
+									</div>
+									<div class="row">
+											<div class="row-6 row-12-mobilep">
+												<br> <br>
+												<h3>AR Navigation</h3>
+												<p>With Scene Abstraction, we can build a virtual scene which maps to real scene. Then, we can use AR obejects and draw AR Route to navigate users.</p>
+												<p><b>Solve Occulsion issue in Augmented Reality</b></p>
+												<span><img width=50% src="images/Occulsion.png" alt="" /></span>
+											</div>
 									</div>
 							</div>
 					</div>
