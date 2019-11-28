@@ -2064,14 +2064,6 @@
 			font-size: 20px;
 		}
 
-		header.major img {
-			display: inline-block;
-			float: left;
-			width: 30%;
-			border-radius: 8px;
-			
-		}
-
 /* Form */
 
 	form {
@@ -2490,6 +2482,13 @@
 			overflow: hidden;
 			-ms-flex: 1;
 
+		}
+
+		.image.round2 {
+			display: inline-block;
+			float: left;
+			width: 30%;
+			border-radius: 8px;
 		}
 
 		.image.fit {
