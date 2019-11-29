@@ -2485,10 +2485,9 @@
 		}
 
 		.image.round2 {
-			display: inline-block;
-			float: left;
-			width: 30%;
-			border-radius: 8px;
+			width: 10em;
+			overflow: hidden;
+			-ms-flex: 1;
 		}
 
 		.image.fit {
