@@ -2478,7 +2478,14 @@
 		}
 
 		.image.round {
-			width: 15em;
+			width: 40%;
+			overflow: hidden;
+			-ms-flex: 1;
+
+		}
+
+		.image.igs {
+			width: 45%;
 			overflow: hidden;
 			-ms-flex: 1;
 
