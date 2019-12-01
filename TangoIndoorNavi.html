@@ -38,7 +38,7 @@
 					<header>
 						<h2>Tango Multi Reality</h2>
 						<h3>Tango indoor navigation</h3>
-						<p>Drew the AR Navigation route on the floor and used AR objects to interact with users; with precise localization, this application can support Blind Navigation</p>
+						<p style="font-size: 1.2em;">Drew the AR Navigation route on the floor and used AR objects to interact with users; with precise localization, this application can support Blind Navigation</p>
 					</header>
 					<div class="box">
 						<span class="image featured"><video width = 100%  controls autoplay> <source src = "videos/tango_indoor_navi.mp4" type="video/mp4"></video></span>
@@ -48,7 +48,7 @@
 							<div class="row">
 								<div class="row-6 row-12-mobilep">
 									<h3>Goal</h3>
-									<p>With Google Project Tango devices, we can do <b>Area Learning</b>and <b>Scene Abstraction</b>
+									<p style="font-size: 1.1em;">With Google Project Tango devices, we can do <b>Area Learning</b>and <b>Scene Abstraction</b>
 									<br>(collect spatial information and construct a virtual scene which maps to the physical scene)
 									<br>We want to build an application which makes users live in a convenient world with Augmented Reality. Tango indoor navigation drew AR navigation route on the fllor and used AR objects to interact with users; with precise localization, this application can support Blind Navigation</p>
 								</div>
@@ -66,14 +66,13 @@
 								</div>
 								<div class="row-6 row-12-mobilep">
 									<h3>RGB + Point Cloud</h3>
-									<p>RGB frame and Point Cloud alignment</p>
-									<p>Step: </p>
+									<p style="font-size: 1.1em;">RGB frame and Point Cloud alignment</p>
 									<ul>
-										<li>Dump RGB frame and Point Cloud raw data</li>
-										<li>Decode RGB frame from YUV</li>
-										<li>Camera extrinsic transformation</li>
+										<li style= "text-align: left; font-size: 1.1em;">Dump RGB frame and Point Cloud raw data</li>
+										<li style= "text-align: left; font-size: 1.1em;">Decode RGB frame from YUV</li>
+										<li style= "text-align: left; font-size: 1.1em;">Camera extrinsic transformation</li>
 										<img width="250" src="images/math1.png" alt="" />
-										<li>Map Point Cloud with Area Description File</li>	
+										<li style= "text-align: left; font-size: 1.1em;">Map Point Cloud with Area Description File</li>	
 									</ul>
 								</div>
 							</div>
@@ -81,53 +80,50 @@
 							<div class="row">
 									<div class="row-6 row-12-mobilep">
 										<h3>3D Object Detection</h3>
-										<p>Point Cloud projection and labeling</p>
-										<p>Step: </p>
+										<p style="font-size: 1.1em;">Point Cloud projection and labeling</p>
 										<ul>
-											<li>Use PSPNet (CVPR2017) segment 2D RGB image</li>
-											<li>Project 3D Point Cloud to Segment result</li>
-											<li>Voting the Point Cloud label with valid class</li>
+											<li style= "text-align: left; font-size: 1.1em;">Use PSPNet (CVPR2017) segment 2D RGB image</li>
+											<li style= "text-align: left; font-size: 1.1em;">Project 3D Point Cloud to Segment result</li>
+											<li style= "text-align: left; font-size: 1.1em;">Voting the Point Cloud label with valid class</li>
 											<img width = 100% src="images/3dobject1.png" />
 										</ul>
 										<h3>Centroid founding and Bounding Box Generation</h3>
-										<p>Step: </p>
 										<ul>
-											<li>Generate random 10000 points in space and select the point in high density area as candidate (white)</li>
-											<li>Group candidate with distance (blue)</li>
-											<li>Generate Bounding by centroid</li>
+											<li style= "text-align: left; font-size: 1.15em;">Generate random 10000 points in space and select the point in high density area as candidate (white)</li>
+											<li style= "text-align: left; font-size: 1.15em;">Group candidate with distance (blue)</li>
+											<li style= "text-align: left; font-size: 1.15em;">Generate Bounding by centroid</li>
 											<img width = 100% src="images/3dobject2.png" />
 										</ul>
 
 									</div>
 									<div class="row-6 row-12-mobilep">
 										<h3>Scene Abstraction</h3>
-										<p>Online annotation and add info</p>
-										<p>Step: </p>
+										<p style="font-size: 1.1em;">Online annotation and add info</p>
 										<ul>
-											<li>Online annotation wall, ceiling, floor and door</li>
-											<li>Combine Object Bounding Box</li>
-											<li>Adjust Bounding Box size in Offline Editor</li>
-											<li>Offline Editor adding map information</li>
+											<li style= "text-align: left; font-size: 1.15em;">Online annotation wall, ceiling, floor and door</li>
+											<li style= "text-align: left; font-size: 1.15em;">Combine Object Bounding Box</li>
+											<li style= "text-align: left; font-size: 1.15em;">Adjust Bounding Box size in Offline Editor</li>
+											<li style= "text-align: left; font-size: 1.15em;">Offline Editor adding map information</li>
+											<br>
 											<video width = 100%  controls> <source src = "videos/scene_abstraction.mp4" type="video/mp4"></video>
 										</ul>	
 									</div>
 									<div class="row">
 											<div class="row-6 row-12-mobilep">
 												<h3>Room Graph</h3>
-												<span class="image featured"><img src="images/room_graph.png" alt="" /></span>
+												<span class="image "><img width= 80% src="images/room_graph.png" alt="" /></span>
 												</div>
 											<div class="row-6 row-12-mobilep">
 												<br><br>
 												<h3>Offline Editior</h3>
-												<span class="image featured"><img src="images/offline_editior.png" alt="" /></span>
+												<span class="image "><img width = 80% src="images/offline_editior.png" alt="" /></span>
 											</div>
 									</div>
 									<div class="row">
 											<div class="row-6 row-12-mobilep">
-												<br> <br>
 												<h3>AR Navigation</h3>
-												<p>With Scene Abstraction, we can build a virtual scene which maps to real scene. Then, we can use AR obejects and draw AR Route to navigate users.</p>
-												<p><b>Solve Occulsion issue in Augmented Reality</b></p>
+												<p style="font-size: 1.1em;">With Scene Abstraction, we can build a virtual scene which maps to real scene. Then, we can use AR obejects and draw AR Route to navigate users.</p>
+												<p style="font-size: 1.1em;"><b>Solve Occulsion issue in Augmented Reality</b></p>
 												<span><img width=50% src="images/Occulsion.png" alt="" /></span>
 											</div>
 									</div>
